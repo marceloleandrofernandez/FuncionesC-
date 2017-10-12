@@ -1,7 +1,7 @@
 ========================================================================
     APPLICATION : Ejercicios Project Overview
 ========================================================================
-=========Archivos Basura!!! "Lo que sirve" */Ejercicios/ej1.cpp*========
+=========Archivos Basura!!! "Lo que sirve" */Ejercicios/ej1.h*========
 
 
 
