@@ -30,6 +30,9 @@
     <ClInclude Include="ej1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="parcial_punt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
