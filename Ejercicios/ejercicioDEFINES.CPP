@@ -20,8 +20,8 @@ cout<<"Ingrese Horas trabajadas: \n" ;
 cin>> b;
 cout<<"Ingrese Precio x Hs: \n" ;
 cin>>c;
-//#define PORC(A)((A*12)/100)           //Hasta ac· se ingresan las variables
-/*if (b<=40){                           //Pero los c·lculos se Hacen en el define
+//#define PORC(A)((A*12)/100)           //Hasta ac√° se ingresan las variables
+/*if (b<=40){                           //Pero los c√°lculos se Hacen en el define
 d=(b*c) ;                               //
 }                                        //
 if (b>40&&b<=50){                       //
@@ -33,7 +33,7 @@ z=(d*12)/100;                           //                     EJERCICIO
 d-=z;                                    //    ESTO            DE IGUAL
 }                                        //                    MANERA
 if(b>50) {                               //                    SIN EL USO
-f=b-40;                                  //    EST¡            DE DEFINE
+f=b-40;                                  //    EST√Å            DE DEFINE
 f*=(c*3) ;                                //
 d=40*c;                                  //
 d+=f;                                     //  AL PEDO
