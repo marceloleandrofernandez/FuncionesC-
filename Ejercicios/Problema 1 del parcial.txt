@@ -1,0 +1,49 @@
+// ConsoleApplication4.cpp: archivo de proyecto principal.
+
+#include "stdafx.h"
+#include <iostream>
+#define N 2
+
+using namespace std;
+
+struct info
+{
+	char codigo[10];
+	char desc[40];
+	float cant;
+	float precio;
+};
+union stock
+{
+	int deposito;
+	info merca; 
+};
+	
+void main(void)
+{
+	stock stock1[N];
+	stock *aux;
+	float *valorizacion;
+	aux = new stock;
+	valorizacion = new float;
+	*valorizacion = 0.0;
+	for (int i = 0; i < N; i++)
+	{
+		cout << "Ingrese codigo: ";
+		cin >> aux->merca.codigo;
+		cout << "Descripcion: ";
+		cin >> aux->merca.desc;
+		cout << "Ingrese cantidad: ";
+		cin >> aux->merca.cant;
+		cout << "Ingrese precio: ";
+		cin >> aux->merca.precio;
+		cout << "Deposito: ";
+		cin >> aux->deposito;
+		*valorizacion += (aux->merca.precio) * (aux->merca.cant);
+		stock1[i] = *aux;
+	}
+	cout << "\n\nEl Stock valorizado = " << *valorizacion<<endl;
+	system("pause");
+	delete aux;
+	delete valorizacion;
+}
