@@ -58,7 +58,7 @@ void puntero3()
 
 							  /* cuando llamamos a "fixup"     */
 	fixup(pecans, &apples);  /* damos el valor de pecans      */
-							/* y la dirección de apples      */
+							/* y la direcciÃ³n de apples      */
 
 	printf("Los valores finales son pecans=%d apples=%d\n", pecans, apples);
 
@@ -88,7 +88,7 @@ void punterostruct(){
 
 	for (index = 0; index < 12; index++) {
 		point = kids + index;
-		printf("%c tiene %d años y un grado escolar de %d\n",
+		printf("%c tiene %d aÃ±os y un grado escolar de %d\n",
 			(*point).initial, kids[index].age,
 			point->grade);
 	}
@@ -119,7 +119,7 @@ void putero4()
 }
 void imp_relleno(float dato_a_ignorar)
 {
-	printf("Esta es la impresión de la función relleno.\n");
+	printf("Esta es la impresiÃ³n de la funciÃ³n relleno.\n");
 }
 
 
