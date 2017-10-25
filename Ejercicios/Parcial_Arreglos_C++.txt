@@ -1,0 +1,79 @@
+// ComoParcial.cpp : main project file.
+
+#include "stdafx.h"
+#include <iostream>
+#include <time.h>
+#define N 10
+using namespace std;
+void carga(int mat[][N], int a){
+for (int i = 0; i < a; i++)
+{
+	for (int j = 0; j < a; j++)
+	{
+		mat[i][j] = rand() % 10;
+		cout << mat[i][j] << " ";
+	}
+	cout << endl;
+}
+}
+float promedio(int mat[][N], int a){
+	float prom;
+	for (int i = 0; i < a; i++)
+	{
+		prom += mat[i][i];
+	}
+	return prom /= a;
+}
+void multiplica(int mat[][N], int a,float promedio){
+	for (int i = 0; i < a; i++)
+	{
+		for (int j = 0; j < a; j++)
+		{
+			if ((i == 0) || (i == a - 1))
+			{
+				mat[i][j] *= promedio;
+			}
+		}
+	}
+}
+void muestra(int mat[][N], int  a){
+	for (int i = 0; i < a; i++)
+	{
+		for (int j = 0; j < a; j++)
+		{
+			cout << mat[i][j] << " ";
+		}
+		cout << endl;
+	}
+}
+bool verifica(int opc){
+
+	if (opc < 2 || opc > 10)
+	{
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+void main()
+{
+	int a;
+	int mat[N][N];
+	float prom;
+	srand(time(NULL));
+	cout << "Hello World" << endl;
+	do{
+		cout << "ingrese dimension" << endl;
+		cin >> a;
+	}while (verifica(a));
+	mat[a][a];
+	carga(mat,a);
+	prom=promedio(mat,a);
+	
+	cout << "El promedio es = " << prom << endl;
+	multiplica(mat, a,prom);
+	muestra(mat, a);
+	
+	system("pause");
+}
