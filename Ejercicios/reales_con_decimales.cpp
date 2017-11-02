@@ -52,7 +52,7 @@ int main()
   	cin >> x;
 	cout << "\n\nIngrese la Cantidad de Decimales "; 
 	cin >> y;
-  //cout << "\n\nLa suma de los números es : " << sumar_valores(x,y);
+  //cout << "\n\nLa suma de los nÃºmeros es : " << sumar_valores(x,y);
   
   	cout << "\nEl valor redondeado es : " << redon(x,y);
 
