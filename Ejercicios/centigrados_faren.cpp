@@ -25,11 +25,11 @@
 //  float x,y;
 //
 //  cout << "Ingrese el valor en grados celsius";
-//  cout << "\n\nIngrese el primer número: ";
+//  cout << "\n\nIngrese el primer nÃºmero: ";
 //  cin >> x;
 //  
 //
-//  //cout << "\n\nLa suma de los números es : " << sumar_valores(x,y);
+//  //cout << "\n\nLa suma de los nÃºmeros es : " << sumar_valores(x,y);
 //  
 //  cout << "\nEl valor en farenheit es-: " << conver(x);
 //
