@@ -36,7 +36,7 @@
 //  	cin >> x;
 //	cout << "\n\nIngrese Salario hora "; 
 //	cin >> y;
-//  //cout << "\n\nLa suma de los números es : " << sumar_valores(x,y);
+//  //cout << "\n\nLa suma de los nÃºmeros es : " << sumar_valores(x,y);
 //  
 //  	cout << "\nEl salario por la cantidad de horas trabajadas es : " << redon(x,y);
 //
