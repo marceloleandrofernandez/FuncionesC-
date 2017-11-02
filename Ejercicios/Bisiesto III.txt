@@ -1,0 +1,79 @@
+// Año Bisiesto III.cpp: archivo de proyecto principal.
+/*
+Dado el número de un mes y si el año es o no bisiesto, deducir el número de días del mes.
+Un año es bisiesto si es múltilpo de 4 (Ejemplo 1984). Los años múltilpos de 100 no son bisiestos, excepto
+si ellos también son múltiplos de 400. Por ejemplo 2000 es bisiesto, 1800 no lo es.
+*/
+#include "stdafx.h"
+#include <iostream>
+#define BIS(A) ((!(A % 4) && ((A % 100) || !(A % 400)))?1:0) //segunda modificacion
+#define PAR(A) (A%2?0:1) //si es par el resto es cero (FALSO), es decir por falso devuelve 1 (que es par)
+#define MES(A,M) (M>0,M<13?(M==2?(BIS(A)?"29 dias":"28 dias"):(M<8?PAR(M)?"30 dias":"31 dias":(PAR(M)?"31 dias":"30 dias"))):"Es de otro planeta")
+/*
+	Recordar que la como es como && (y) M>0,M<13 ==> esto es para verificar que no se introdujo un mes inválido
+	Recordar también que se puede incluir un define dentro de otro.
+	Una vez eliminado el mes 2, los  meses que son menores de agosto(8), si son pares tiene 30 días y si son 
+	impares tienen 31 días. En los tros meses es al revés.
+*/
+using namespace std;
+
+void main(void)
+{
+	int aaaa, b,mm;
+	do
+	{
+		cout << "\nIngrese a (0 = FIN): ";
+		cin >> aaaa;
+		if (!aaaa) break;
+		cout << "Ingrese mes: ";
+		cin >> mm;
+		cout << "Este mes tiene " << MES(aaaa, mm) << endl;
+		// Primera modificacion
+		/*
+		if ((aaaa % 4 == 0) && ((aaaa % 100 != 0) || (aaaa % 400 == 0)))
+		b = 1;
+		else
+		b = 0;
+		
+
+		b = BIS(aaaa);
+		if (b) cout << endl << "Es bisiesto";
+		else  cout << endl << "No es bisiesto";
+		
+		//if (aaaa)
+		//	cout << (BIS(aaaa) ? "\nEs bisiesto " : "\nNo es bisiesto");//tercera modificacion
+
+		switch (mm)
+		{
+		case 1: cout << "\nEl mes tiene 31 dias\n";
+			break;
+		case 2: if (b) cout << "\nEl mes tiene 29 dias\n";
+				else cout << "\nEl mes tiene 28 dias\n";
+			break;
+		case 3: cout << "\nEl mes tiene 31 dias\n";
+			break;
+		case 4: cout << "\nEl mes tiene 30 dias\n";
+			break;
+		case 5: cout << "\nEl mes tiene 31 dias\n";
+			break;
+		case 6: cout << "\nEl mes tiene 30 dias\n";
+			break;
+		case 7: cout << "\nEl mes tiene 31 dias\n";
+			break;
+		case 8: cout << "\nEl mes tiene 31 dias\n";
+			break;
+		case 9: cout << "\nEl mes tiene 30 dias\n";
+			break;
+		case 10: cout << "\nEl mes tiene 31 dias\n";
+			break;
+		case 11: cout << "\nEl mes tiene 30 dias\n";
+			break;
+		case 12: cout << "\nEl mes tiene 31 dias\n";
+			break;
+		default:
+			cout << "\nEste mes debe ser de otro planeta\n";
+			break;
+		
+		}*/
+	} while (aaaa);
+}
