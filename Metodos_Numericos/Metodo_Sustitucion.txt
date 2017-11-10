@@ -1,0 +1,32 @@
+# Metodo Sustitucion
+
+Inicio Programa Integrales Indefinidas (Sustitucion)
+Mostrar = Determinar:  f(x)*dx = F(x)+C 
+ // Establecemos Integral
+
+	f(x)*dx = S(2x+3)^5*dx	
+
+//Identificar la fución a sustituir
+
+	u = (2x + 3)
+	
+
+///Determinar el diferencial de "u" ("du")
+/// Se deriva u = du = (( du / dx) * dx)
+	
+	du = 2*dx
+
+//Sustituir y Reescribir la integral
+
+	S(2x+3)^5*dx =  1/2 S(u)^5 * du 
+
+//Integrar 
+
+	1/2 S(u)^5 * du  = 1/2 ((u^6)/6) + c
+
+	1/2 ((u^6)/6) + c = ((2x + 3) ^ 6) / 12) + c
+
+//Mostrar Resultados
+
+	F(x) + c = ((2x + 3) ^ 6) / 12) + c
+Fin

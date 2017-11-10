@@ -1,0 +1,22 @@
+Metodo Simpson
+//	funcion = Funcion a evaluar, a = limite inferior, b = limite superior, n = numero de iteraciones
+//	Resultado : area = valor de la integral
+
+Leer a,b,n
+
+    Si 	n%2 6 <> 0 Entonces:
+
+		Mostrar: Numero de iteraciones impar
+	
+	Sino:
+	
+		h = (b − a) / n
+		/* Hallar las sumas de los terminos pares e impares */
+		Para i = 1 Hasta n − 1 Hacer:
+				Si i % 2 = 0 Entonces:
+					sump = sump + funcion(a + (i ∗ h))
+				Sino:
+					sumi = sumi + funcion(a + (i ∗ h))
+area = (h/3) * (funcion(a) + 4 * sumi + 2 * sump + funcion(b))
+
+Mostrar: El Area de la funcion en el intervalo [a, b] es area

@@ -1,0 +1,18 @@
+
+Inicio Programa Trapecio
+//	funcion = Funcion a evaluar, a = limite inferior, b = limite superior, n = numero de iteraciones
+//	Resultado : area = valor de la integral
+
+Leer a,b,n
+
+h = (b - a ) / n
+
+/* Hallar la suma de los terminos del medio */
+
+Para i = 1 Hasta n Hacer:
+	suma ← suma + funcion(a + (i ∗ h))
+Fin Para
+
+area = (h/2) * (funcion(a) + 2 ∗ sum + funcion(b)) 
+
+Mostrar:El Area de la funcion en el intervalo [a, b] es area
